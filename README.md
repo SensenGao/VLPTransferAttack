@@ -19,7 +19,10 @@ Recent research on Vision-language pre-training (VLP) models highlights their vu
 conda env create -f VLPTransferAttack.yml
 ```
 
+**Common Issue:** If you find the above instructions invalid, please use the `requirements.txt`.
+
 ### 2. Prepare datasets and models
+
 Download the datasets, [Flickr30k](https://shannon.cs.illinois.edu/DenotationGraph/) and [MSCOCO](https://cocodataset.org/#home) (the annotations is provided in ./data_annotation/). Set the root path of the dataset in `./configs/Retrieval_flickr.yaml, image_root`.  
 The checkpoints of the fine-tuned VLP models is accessible in [ALBEF](https://github.com/salesforce/ALBEF), [TCL](https://github.com/uta-smile/TCL), [CLIP](https://huggingface.co/openai/clip-vit-base-patch16).
 
@@ -28,7 +31,7 @@ The checkpoints of the fine-tuned VLP models is accessible in [ALBEF](https://gi
 You can download the datasets from this [link](https://drive.google.com/file/d/1nHchVNcJuc-dZVTa1Y_QGHPCZBPU9eUj/view). Or you can use the following instruction:
 
 ```bash
-wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1nHchVNcJuc-dZVTa1Y_QGHPCZBPU9eUj&export=download&authuser=0&confirm=t&uuid=aa913038-f5cb-40ca-b6ac-2e95ea272d5d&at=APZUnTXzfoJF6dd63iYGfiu24vxk%3A1720008967767' -O datasets.tar.gz
+wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1zBQUcAccfWeXa7MKBSEyvpT-IWy7Z0_A&export=download&authuser=0&confirm=t&uuid=39b175db-9722-40ba-a2bb-3be50baea4e0&at=AO7h07dBMmYAaBoPQvdhLYW0reD2:1726986807692' -O datasets.tar.gz
 ```
 
 **Prepare checkpoints for models:**
@@ -47,17 +50,19 @@ Please create a directory `checkpoints` first, Then use the following instructio
 wget https://storage.googleapis.com/sfr-pcl-data-research/ALBEF/mscoco.pth -O albef_mscoco.pth
 ```
 
-3. TCL Pre-Trained on Flickr30K
+3. TCL Pre-Trained on Flickr30K(**Invalid Now**)
 
 ```bash
 wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1qwWfqyCu1F5YZqQNxjkqy1REESoU6pOT&export=download&authuser=0&confirm=t&uuid=ba76663a-9838-4508-a417-cc2ac52b6afe&at=APZUnTXrehkOzsP4JEi2iyyy03qw%3A1719988215602' -O tcl_flickr.pth
 ```
 
-4. TCL Pre-Trained on MSCOCO
+4. TCL Pre-Trained on MSCOCO(**Invalid Now**)
 
 ```bash
 wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1PtcZF_XzJgIceg4rXLWqGQiXjizvxxS6&export=download&authuser=0&confirm=t&uuid=c4664ba2-285a-47dc-9d9d-38fee6558997&at=APZUnTWkVgMXZCmEKxfQ-jE8PvV2%3A1719988395511' -O tcl_mscoco.pth
 ```
+
+**Common Issue:** We found that the pretrained weights were removed from the [TCL](https://github.com/uta-smile/TCL) repository, so we uploaded the weights we had saved to the Hugging Face repository. Please download all the weights from the Hugging Face repository [Sensen02/VLPTransferAttackCheckpoints · Hugging Face](https://huggingface.co/Sensen02/VLPTransferAttackCheckpoints).
 
 ### 3. parameter settings
 
