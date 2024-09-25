@@ -16,10 +16,9 @@ Recent research on Vision-language pre-training (VLP) models highlights their vu
 
 ### 1. Install dependencies
 ```bash
-conda env create -f VLPTransferAttack.yml
+pip install torch==2.1.0 torchvision==0.16.0 --index-url https://download.pytorch.org/whl/cu121
+pip install -r requirements.txt
 ```
-
-**Common Issue:** If you find the above instructions invalid, please use the `requirements.txt`.
 
 ### 2. Prepare datasets and models
 
