@@ -4,6 +4,17 @@
 
 Please feel free to contact gaosensen@mail.nankai.edu.cn if you have any question.
 
+## Updates
+
+- We name this method in the paper DRA (**Diversification** along the Intersection **Region** of Adversarial Trajectory **Attack**) to facilitate comparison.
+- We further improve DRA with the **SA-AET** method, achieving a significant enhancement in adversarial transferability. Please refer to the paper [[2411.02669v1\] Semantic-Aligned Adversarial Evolution Triangle for High-Transferability Vision-Language Attack](https://arxiv.org/abs/2411.02669v1) and the code [SA-AET](https://github.com/jiaxiaojunQAQ/SA-AET).
+
+## Common Issue
+
+1. Why are the SGA results in the main text much higher than those in the SGA paper?
+
+   **Answer:** We adopted different perturbation settings, with 8/255 presented in the main text. The corresponding settings in the SGA paper can be found in Appendix Tables A5 and A6. If you need a comparison under the SGA perturbation setting of 2/255.
+
 ## Brief Introduction
 
 Recent research on Vision-language pre-training (VLP) models highlights their vulnerability to multimodal adversarial examples (AEs). The work [SGA](https://github.com/Zoky-2020/SGA) suggests that increasing AE diversity during optimization improves transferability but risks overfitting the victim model. We propose enhancing AE transferability by diversifying examples along the intersection region of the adversarial trajectory. By incorporating text-guided AE selection and directing adversarial text deviation from the last intersection region, we aim to eliminate overfitting and improve the transferability of multimodal adversarial examples.
