@@ -174,11 +174,22 @@ Please send the adversarial images to LLMs and prompt these systems with the que
 ## Citation
 
 Kindly include a reference to this paper in your publications if it helps your research:
-```
-@article{gao2024boosting,
-  title={Boosting Transferability in Vision-Language Attacks via Diversification along the Intersection Region of Adversarial Trajectory},
+```latex
+# DRA
+@inproceedings{gao2025boosting,
+  title={Boosting transferability in vision-language attacks via diversification along the intersection region of adversarial trajectory},
   author={Gao, Sensen and Jia, Xiaojun and Ren, Xuhong and Tsang, Ivor and Guo, Qing},
-  journal={arXiv preprint arXiv:2403.12445},
+  booktitle={European Conference on Computer Vision},
+  pages={442--460},
+  year={2025},
+  organization={Springer}
+}
+
+#SA-AET
+@article{jia2024semantic,
+  title={Semantic-Aligned Adversarial Evolution Triangle for High-Transferability Vision-Language Attack},
+  author={Jia, Xiaojun and Gao, Sensen and Guo, Qing and Ma, Ke and Huang, Yihao and Qin, Simeng and Liu, Yang and Cao, Xiaochun},
+  journal={arXiv preprint arXiv:2411.02669},
   year={2024}
 }
 ```
