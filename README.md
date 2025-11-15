@@ -7,7 +7,7 @@ Please feel free to contact gaosensen@mail.nankai.edu.cn if you have any questio
 ## Updates
 
 - We name this method in the paper DRA (**Diversification** along the Intersection **Region** of Adversarial Trajectory **Attack**) to facilitate comparison.
-- We further improve DRA with the **SA-AET** method, achieving a significant enhancement in adversarial transferability. Please refer to the paper [[2411.02669v1\] Semantic-Aligned Adversarial Evolution Triangle for High-Transferability Vision-Language Attack](https://arxiv.org/abs/2411.02669v1) and the code [SA-AET](https://github.com/jiaxiaojunQAQ/SA-AET).
+- We further improve DRA with the **SA-AET**[T-PAMI2025] method, achieving a significant enhancement in adversarial transferability. Please refer to the paper [[2411.02669v1\] Semantic-Aligned Adversarial Evolution Triangle for High-Transferability Vision-Language Attack](https://arxiv.org/abs/2411.02669v1) and the code [SA-AET](https://github.com/jiaxiaojunQAQ/SA-AET).
 
 ## Common Issue
 
@@ -193,3 +193,4 @@ Kindly include a reference to this paper in your publications if it helps your r
   year={2024}
 }
 ```
+
